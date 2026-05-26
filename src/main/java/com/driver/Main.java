@@ -2,20 +2,20 @@ package com.driver;
 
 public class Main {
 
-    // Task 1: Create Product class inside Main
+    // Product class inside Main
     static class Product {
 
-        // Task 3
+        // Method with 2 int parameters
         public int product(int x, int y) {
             return x * y;
         }
 
-        // Task 4 (Overloaded)
+        // Overloaded method with 3 int parameters
         public int product(int x, int y, int z) {
             return x * y * z;
         }
 
-        // Task 5 (Overloaded)
+        // Overloaded method with double parameters
         public double product(double x, double y) {
             return x * y;
         }
@@ -23,12 +23,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Task 2: Create object p
+        // Object creation
         Product p = new Product();
 
-        // Calling all overloaded methods
-        System.out.println(p.product(2, 3));          // int, int
-        System.out.println(p.product(2, 3, 4));       // int, int, int
-        System.out.println(p.product(2.5, 3.5));      // double, double
+        // Calling overloaded methods
+        System.out.println(p.product(2, 3));
+        System.out.println(p.product(2, 3, 4));
+        System.out.println(p.product(2.5, 3.5));
     }
 }
